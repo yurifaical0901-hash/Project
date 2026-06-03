@@ -21,9 +21,11 @@ body{
     overflow:hidden;
     display:flex;
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    
 }
 
 .left-panel{
+    
     width:45%;
     background:linear-gradient(
         135deg,
@@ -56,6 +58,7 @@ body{
     width:55%;
     padding:40px;
     overflow-y:auto;
+    scrollbar-width: none;
 }
 
 .tabs{
@@ -71,6 +74,7 @@ body{
     cursor:pointer;
     border-radius:10px;
     background:#e5e7eb;
+    transition: 0.5s;
 }
 
 .tabs .active{
