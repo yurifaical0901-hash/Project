@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DPCME Connect </title>
-
     <link rel="stylesheet" href="css/globalsidebar.css">
+    <link rel="stylesheet" href="css/funcionarios.css">
 
 </head>
+
 <body>
     <aside class="sidebar">
         <div class="logo">
@@ -55,5 +57,120 @@
             <a href="../index.html">🚪 Sair</a>
         </div>
     </aside>
+    <main class="content">
+
+        <section class="page-header">
+
+            <div>
+                <h1>Funcionários</h1>
+                <p>Gerenciamento completo dos colaboradores.</p>
+            </div>
+
+            <button class="btn-primary">
+                + Novo Funcionário
+            </button>
+
+        </section>
+
+        <section class="filtros">
+
+            <input type="text" placeholder="Pesquisar funcionário...">
+
+            <select>
+                <option>Todos Departamentos</option>
+            </select>
+
+            <select>
+                <option>Todos Cargos</option>
+            </select>
+
+            <select>
+                <option>Todos Status</option>
+                <option>Ativo</option>
+                <option>Férias</option>
+                <option>Afastado</option>
+                <option>Desligado</option>
+            </select>
+
+        </section>
+
+        <section class="cards-resumo">
+
+            <div class="card">
+                <h3>Total</h3>
+                <span>120</span>
+            </div>
+
+            <div class="card">
+                <h3>Ativos</h3>
+                <span>115</span>
+            </div>
+
+            <div class="card">
+                <h3>Férias</h3>
+                <span>3</span>
+            </div>
+
+            <div class="card">
+                <h3>Afastados</h3>
+                <span>2</span>
+            </div>
+
+        </section>
+
+        <section class="tabela-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>000.000.000-00</td>
+                        <td>Analista</td>
+                        <td>RH</td>
+                        <td>
+                            <span class="status ativo">
+                                Ativo
+                            </span>
+                        </td>
+                        <td>
+
+                            <button class="btn-editar">
+                                Editar
+                            </button>
+
+                            <button class="btn-excluir">
+                                Excluir
+                            </button>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+    <script src="../assets/js/sidebar.js"></script>
+    
 </body>
+
 </html>
