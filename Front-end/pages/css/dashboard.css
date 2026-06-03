@@ -217,3 +217,9 @@ header input {
     margin-left:270px;
     padding:25px;
 }
+.sidebar a.active{
+    background:white;
+    color:#772ac0;
+    font-weight:bold;
+    border-left:5px solid #ffd700;
+}
